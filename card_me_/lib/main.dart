@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(Benimuyg());
+  runApp(const Benimuyg());
 }
 
 class Benimuyg extends StatelessWidget {
@@ -22,7 +22,9 @@ class Benimuyg extends StatelessWidget {
                   style: TextStyle(
                       fontFamily: 'Arvo', fontSize: 23, color: Colors.red),
                 ),
-                SizedBox(height: 30,),
+                SizedBox(
+                  height: 30,
+                ),
                 CircleAvatar(
                   radius: 70,
                   backgroundColor: Colors.black,
@@ -32,8 +34,8 @@ class Benimuyg extends StatelessWidget {
                   height: 23,
                 ),
                 Text(
-                    'BAHRA TIME',
-                  style: GoogleFonts.arvo(fontSize: 23,color: Colors.white),
+                  'BAHRA TIME',
+                  style: GoogleFonts.arvo(fontSize: 23, color: Colors.white),
                 ),
                 Container(
                   width: 350,
@@ -47,20 +49,20 @@ class Benimuyg extends StatelessWidget {
                     horizontal: 30,
                   ),
                   color: Colors.grey[500],
-                  child: ListTile(leading: Icon(
-                    Icons.youtube_searched_for_outlined,
-                    color: Colors.black,
-                    size: 23,
-                  ),title: Text(
-                    'Youtube Account: BAHRA TIME',
-                    style: TextStyle(
-                      color: Colors.white70,
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.youtube_searched_for_outlined,
+                      color: Colors.black,
+                      size: 23,
                     ),
-                  ),),
-
+                    title: Text(
+                      'Youtube Account: BAHRA TIME',
+                      style: TextStyle(
+                        color: Colors.white70,
+                      ),
+                    ),
+                  ),
                 ),
-
-
               ],
             ),
           ),
